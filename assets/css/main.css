@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  width: 90.2rem;
+  height: 50.1rem;
+  background: #fff;
+  border-radius: 0.8rem;
+}
+
+.image,
+.accordion {
+  width: 50%;
+}
+
+.img-desktop {
+  margin-left: -26rem;
+  margin-top: -12rem;
+}
+
+.img-mobile {
+  display: none;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.accordion-box {
+  width: 80%;
+  padding: 1rem 1rem 1.2rem 1rem;
+}
+
+hr {
+  margin-left: -0.5rem;
+  border-bottom: 1px solid #8b7c7c;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  color: #4b4c5f;
+  padding-bottom: 1rem;
+  cursor: pointer;
+
+  
+}
+
+.accordion-title:hover{
+  color:#F47B56;
+}
+
+.accordion-title.active i {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+i {
+  transition: transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+}
+
+.accordion-content {
+  padding: 0.3rem;
+  font-size: 1.2rem;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
