@@ -1,0 +1,12 @@
+# Sketch file
+###############################################
+*.sketch
+
+# XD or Figma
+#######################################################
+*.xd
+*.fig
+
+# .DS_Store files and ...
+.DS_Store
+.prettierignore
